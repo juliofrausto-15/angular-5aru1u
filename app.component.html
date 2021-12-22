@@ -1,0 +1,170 @@
+<div class="col-4 control-section mb-3">
+  <div id="drag-drop-wrapper">
+    <div class="listbox-control">
+      <ejs-listbox
+        #listbox1
+        [dataSource]="dataA"
+        [allowDragAndDrop]="true"
+        height="330px"
+        scope="combined-list"
+        [fields]="fields"
+        (drop)="onDropGroupA($event)"
+      ></ejs-listbox>
+    </div>
+  </div>
+</div>
+<div class="col-8 control-section">
+  <div class="control-wrapper">
+    <div class="sample-container">
+      <div class="default-section">
+        <ejs-richtexteditor
+          id="apiRTE"
+          #apiRTE
+          [showCharCount]="true"
+          [maxLength]="maxLength"
+        >
+          <ng-template #valueTemplate>
+            <p>
+              Rich Text Editor is a WYSIWYG editing control which will reduce
+              the effort for users while trying to express their formatting word
+              content as HTML or Markdown format.
+            </p>
+            <p><b>API’s:</b></p>
+            <ul>
+              <li>
+                <p>
+                  maxLength - allows restricting the maximum length to be
+                  entered.
+                </p>
+              </li>
+              <li>
+                <p>readOnly - allows to change it as a non-editable state.</p>
+              </li>
+              <li>
+                <p>enabled - enable or disable the RTE component.</p>
+              </li>
+              <li>
+                <p>
+                  enableHtmlEncode - Get the encoded string value through value
+                  property and source code panel
+                </p>
+              </li>
+              <li>
+                <p>getValue - get the value of RTE.</p>
+              </li>
+              <li>
+                <p>getSelection - get the selected text of RTE.</p>
+              </li>
+              <li>
+                <p>selectAll - select all content in RTE.</p>
+              </li>
+            </ul>
+          </ng-template>
+        </ejs-richtexteditor>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 property-section">
+  <div class="property-panel-section">
+    <div class="property-panel-header">Properties</div>
+    <div class="property-panel-content">
+      <table id="property" title="Properties">
+        <tbody>
+          <tr>
+            <td>
+              <div>Maximum Length</div>
+            </td>
+            <td>
+              <div>
+                <ejs-numerictextbox
+                  #numeric
+                  id="maxlength"
+                  [value]="numericValue"
+                  [min]="numericmin"
+                  [max]="numericmax"
+                  [format]="numericformat"
+                  (change)="onValChange()"
+                >
+                </ejs-numerictextbox>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>ReadOnly</div>
+            </td>
+            <td>
+              <div>
+                <ejs-checkbox
+                  #readonly
+                  [checked]="false"
+                  (change)="onChangeRead()"
+                ></ejs-checkbox>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>Enabled</div>
+            </td>
+            <td>
+              <div>
+                <ejs-checkbox
+                  #enable
+                  [checked]="true"
+                  (change)="onChangeEnable()"
+                ></ejs-checkbox>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>Enable Html Encode</div>
+            </td>
+            <td>
+              <div>
+                <ejs-checkbox
+                  #enablehtml
+                  [checked]="false"
+                  (change)="onChangeHtml()"
+                ></ejs-checkbox>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <div>
+                <button id="getVal" ejs-button (click)="getVal()">
+                  Get Value
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <div>
+                <button id="selectHtml" ejs-button (click)="getSelect()">
+                  Get Selection
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <div>
+                <button id="selectall" ejs-button (click)="selectAll()">
+                  Select All
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

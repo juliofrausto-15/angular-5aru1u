@@ -1,0 +1,232 @@
+.e-rte-custom-tbar-section #special_char,
+.e-rte-custom-tbar-section .char_block {
+  display: inline-block;
+}
+.e-rte-custom-tbar-section .char_block.e-active {
+  /* box-shadow: inset 3px 3px 7px 0px; */
+  outline: 1.5px solid;
+}
+
+.e-rte-custom-tbar-section .char_block {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px 5px 0;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#custom_tbar,
+#custom_tbar div {
+  cursor: pointer;
+}
+
+.e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-left::before {
+  content: '\e76e';
+}
+
+.e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-right::before {
+  content: '\e726';
+}
+
+.e-richtexteditor textarea.e-content {
+  float: left;
+}
+.e-richtexteditor .e-rte-content {
+  overflow: hidden;
+}
+.e-rte-content .e-content.e-pre-source {
+  width: 100%;
+}
+
+.property-panel-content td {
+  width: 50%;
+}
+.property-panel-content td div {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.e-icon-btn.e-active .e-md-preview::before {
+  content: '\e350';
+}
+
+.e-icon-btn .e-md-preview.e-icons::before {
+  content: '\e345';
+}
+
+.bootstrap4 .e-icon-btn.e-active .e-md-preview::before {
+  content: '\e790';
+}
+
+.bootstrap4 .e-icon-btn .e-md-preview::before {
+  content: '\e787';
+}
+
+.tailwind .e-icon-btn .e-md-preview::before {
+  content: '\e7d0';
+}
+
+.tailwind .e-icon-btn.e-active .e-md-preview::before {
+  content: '\e748';
+}
+
+.bootstrap5 .e-icon-btn.e-active .e-md-preview::before {
+  content: '\e80e';
+}
+
+.bootstrap5 #mdCustom .e-icon-btn .e-md-preview::before {
+  content: '\e7de';
+}
+
+#rteDialog.e-dialog .e-dlg-content {
+  padding: 0px 0px 5px 16px;
+}
+#custom_tbar .e-tbar-btn-text {
+  font-size: 16px;
+}
+.e-bigger #custom_tbar .e-tbar-btn-text {
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .fabric.e-bigger #rteDialog {
+    min-width: 281px;
+  }
+
+  #rteSpecial_char {
+    padding: 15px 0 15px 10px;
+  }
+
+  .fabric #rteDialog {
+    min-width: 241px;
+  }
+
+  .bootstrap.e-bigger #rteDialog,
+  .bootstrap #rteDialog {
+    min-width: 223px;
+  }
+
+  .highcontrast.e-bigger #rteDialog {
+    min-width: 283px;
+  }
+  .highcontrast #rteDialog {
+    min-width: 243px;
+  }
+  .material #rteDialog {
+    min-width: 224px;
+  }
+  .material.e-bigger #rteDialog {
+    min-width: 236px;
+  }
+}
+
+.material .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #e3165b;
+  border-color: #e3165b;
+}
+
+.material-dark .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #56a4fd;
+  border-color: #56a4fd;
+}
+
+.fabric .e-rte-custom-tbar-section .char_block.e-active,
+.fabric-dark .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #0078d6;
+  border-color: #0078d6;
+}
+
+.bootstrap4 .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #007bff;
+  border-color: #007bff;
+}
+
+.bootstrap .e-rte-custom-tbar-section .char_block.e-active,
+.bootstrap-dark .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #317ab9;
+  border-color: #317ab9;
+}
+
+.highcontrast .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #ffd939;
+  border-color: #ffd939;
+}
+
+.tailwind .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #3730a3;
+  border-color: #3730a3;
+}
+
+.tailwind-dark .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #22d3ee;
+  border-color: #22d3ee;
+}
+
+.bootstrap5 .e-rte-custom-tbar-section .char_block.e-active,
+.bootstrap5-dark .e-rte-custom-tbar-section .char_block.e-active {
+  outline: 1px solid #0d6efd;
+  border-color: #0d6efd;
+}
+
+#rteSection {
+  height: 500px;
+}
+
+@font-face {
+  font-family: 'swap-icon';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj1tSfIAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlmXID+ZgAAAcgAAAA4aGVhZBR5I0cAAADQAAAANmhoZWEIVQQDAAAArAAAACRobXR4CAAAAAAAAYAAAAAIbG9jYQAcAAAAAAHAAAAABm1heHABDgAZAAABCAAAACBuYW1ltM6mlQAAAgAAAAI9cG9zdFSIYnYAAARAAAAALgABAAAEAAAAAFwEAAAAAAAD+AABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAARPvYwl8PPPUACwQAAAAAANixb1gAAAAA2LFvWAAAAAAD+AOaAAAACAACAAAAAAAAAAEAAAACAA0AAgAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQQAAZAABQAAAokCzAAAAI8CiQLMAAAB6wAyAQgAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAAQAAAAAXAQAAAAAAAABAAAAAAAABAAAAAQAAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAAHAAAAAIAAAAAA/gDmgAFAAwAABMhBxcBITUxBTUhNycIA1HcLAFP/BAD8Pyv2ysBYs4uATy9AUDOLgAAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAJAAEAAQAAAAAAAgAHAAoAAQAAAAAAAwAJABEAAQAAAAAABAAJABoAAQAAAAAABQALACMAAQAAAAAABgAJAC4AAQAAAAAACgAsADcAAQAAAAAACwASAGMAAwABBAkAAAACAHUAAwABBAkAAQASAHcAAwABBAkAAgAOAIkAAwABBAkAAwASAJcAAwABBAkABAASAKkAAwABBAkABQAWALsAAwABBAkABgASANEAAwABBAkACgBYAOMAAwABBAkACwAkATsgRm9udCBTd2FwUmVndWxhckZvbnQgU3dhcEZvbnQgU3dhcFZlcnNpb24gMS4wRm9udCBTd2FwRm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABGAG8AbgB0ACAAUwB3AGEAcABSAGUAZwB1AGwAYQByAEYAbwBuAHQAIABTAHcAYQBwAEYAbwBuAHQAIABTAHcAYQBwAFYAZQByAHMAaQBvAG4AIAAxAC4AMABGAG8AbgB0ACAAUwB3AGEAcABGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwAEU3dhcAAAAAA=)
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.e-swap-icon {
+  font-family: 'swap-icon' !important;
+  speak: none;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-self: center;
+  margin: 0 10px;
+  transform: rotateX(180deg);
+}
+#drag-drop-wrapper .e-swap-icon:before {
+  content: '\e700';
+}
+#drag-drop-wrapper {
+  width: 85%;
+  margin: auto;
+  display: flex;
+}
+#drag-drop-wrapper .e-btn {
+  margin-top: 15px;
+  float: right;
+  margin-bottom: -43px;
+}
+.e-bigger #drag-drop-wrapper .e-btn {
+  margin-bottom: -51px;
+}
+.listbox-control {
+  width: 40%;
+  margin: auto;
+}
+@media screen and (max-width: 590px) {
+  .listbox-control,
+  #drag-drop-wrapper {
+    width: 100%;
+  }
+  .e-swap-icon {
+    font-size: 30px;
+  }
+}
+#right-pane {
+  transform: none !important;
+}
